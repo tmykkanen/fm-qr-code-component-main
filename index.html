@@ -6,23 +6,54 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./output.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | QR code component</title>
+
+  
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --slate-300: hsl(212, 45%, 89%);
+      --slate-500: hsl(216, 15%, 48%);
+      --slate-900: hsl(218, 44%, 22%);
+
+      font-family: "Outfit";
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+ 
+
+    
+    
   </style>
 </head>
-<body>
+<body class="bg-[var(--slate-300)]">
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <main class="flex flex-col justify-center min-h-svh">
+    <article class="flex flex-col w-[320px] p-4 mx-auto rounded-[20px] bg-[var(--white)]">
+      <img src="./images/image-qr-code.png" alt="scan this qr code" class="rounded-[10px]">
+      <h1 class="font-bold text-[22px]/[120%] mt-6 mb-4 text-center text-[var(--slate-900)]">
+        Improve your front-end skills by building projects
+      </h1>
+      <p class="text-[15px]/[140%] mb-10 text-center text-[var(--slate-500)] tracking-[0.2px]">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </article>
+  </main>
   
-  <div class="attribution">
+  
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">tmykkanen</a>.
+  </div> -->
 </body>
 </html>
